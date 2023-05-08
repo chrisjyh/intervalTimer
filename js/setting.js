@@ -1,10 +1,11 @@
 window.onload = function () {
     // 버튼 선택자
-    const btn = document.querySelectorAll('.btn');
+    const click = document.querySelectorAll('.click');
     const side_nav = document.getElementById('side_nav')
     
     // 버튼 클릭함수 버튼일때 전부 여기서 실행
-    btn.forEach((target) => target.addEventListener('click', function(){ 
+    click.forEach((target) => target.addEventListener('click', function(){
+        console.log("1111") 
         let parent_this = this;
         temp = parent_this.className.split(' ')
         // 버거 클릭할때

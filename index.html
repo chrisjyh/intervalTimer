@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="favicon" href="./img/favico.svg">
+    <link rel="icon" href="./img/favico.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="./js/setting.js"></script>
     <title>Timer_eunho</title>
@@ -16,23 +16,64 @@
             EUNHO'S
             <strong>Interval Timer</strong>
         </h1>
-        <div class="burger btn">
+        <div class="burger click">
             <span></span>
         </div>
     </header>
-    <main>
+    <main class="main">
+        <!-- side_bar -->
         <div id="side_nav">
-            <ul class="main">
-              <li><a href="#0">Home</a></li>
-              <li><a href="#0">Shop</a></li>
+            <ul class="form_list">
+              <li>
+                <div class="form__group field">
+                    <input type="number" class="form__field" placeholder="ROUND" required="" min="0" max="500">
+                    <label for="name" class="form__label">ROUND</label>
+                </div>
+              </li>
+              <li>
+                <div class="form__group field">
+                    <input type="number" class="form__field" placeholder="WORK" required="" min="0" max="500">
+                    <label for="name" class="form__label">WORK</label>
+                </div>
+              </li>
+              <li>
+                <div class="form__group field">
+                    <input type="number" class="form__field" placeholder="REST" required="" min="0" max="500">
+                    <label for="name" class="form__label">REST</label>
+                </div>
+              </li>
+              <li class="add_more">
+                
+              </li>
             </ul>
-
             <div class="about">
               <p>Welcome, it's menu</p>
             </div>
         </div> 
+
         <div class="container">
+            <!-- round_state -->
+            <div class="round_box">
+                <span class="sign">ROUND : </span>
+                <span class="round_first sign">0</span>
+                <span class="sign"> / </span>
+                <span class="round_last sign">0</span>
+                <span calss="state sign">STATE</span>
+            </div>
             
+            <div class="timerbox">
+                <span class="min">00</span>
+                <span class="dot">:</span>
+                <span class="sec">00</span>
+            </div>
+
+            <div class="btn_box">
+                <button class="btn click">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text">START</span>
+                </button>
+            </div>
         </div>
     </main> 
     
